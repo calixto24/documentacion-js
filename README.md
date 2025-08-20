@@ -68,18 +68,19 @@ Es el nombre que se le otorga a las funciones, variables, etc. Pueden comenzar c
 ### Tipos De Datos
 
 - Primitivos: Se accede directamente al valor
-  . string
-  . number
-  . boolean
-  . null
-  . undefined
-  . NaN
+
+  - string
+  - number
+  - boolean
+  - null
+  - undefined
+  - NaN
 
 - Compuestos: Se accede a la referencia del valor
-  . object = {}
-  . array = []
-  . function () => {}
-  . Class {}
+  - object = {}
+  - array = []
+  - function () => {}
+  - Class {}
 
 ### Variables
 
