@@ -8,6 +8,10 @@ Mi apredinzaje en JavaScript
   - [Caracteristicas](#caracteristicas)
   - [Identificadores](#identificadores)
   - [Nomenclaturas](#nomenclaturas)
+  - [Tipos de datos](#tipos-de-datos)
+  - [Variables](#variables)
+  - [Constantes](#constantes)
+  - [Valores especiales](#valores-especiales)
 
 ## Introduccion
 
@@ -60,3 +64,39 @@ Es el nombre que se le otorga a las funciones, variables, etc. Pueden comenzar c
 ```
 
 - Aplica para funciones, primitivos e instancias
+
+### Tipos De Datos
+
+- Primitivos: Se accede directamente al valor
+  . string
+  . number
+  . boolean
+  . null
+  . undefined
+  . NaN
+
+- Compuestos: Se accede a la referencia del valor
+  . object = {}
+  . array = []
+  . function () => {}
+  . Class {}
+
+### Variables
+
+Antes en JavaScript no existia el ambito de bloque. Es decir el "var" no respetaba los bloques, ya que eran de ambito global.
+
+Despues llego la palabra reservada "let" que justamente se encargo de cumplir esa funcion.
+
+### Constantes
+
+No puedes tener una constante vacia cuando el dato es primitivo, ya que accedes al dato directamente.
+
+En cambio, para un dato compuesto si puedes ya que estas accediendo a la referencia del valor.
+
+### Valores especiales
+
+- Undefined: Es cuando declaras una variable pero no le asignas ningun valor.
+
+- null: Es cuando quieres intencionalmente que el valor declarado sea nulo.
+
+- NaN: Es cuando quieres realizar una operacion matematica pero no puede ser representada por un numero.
