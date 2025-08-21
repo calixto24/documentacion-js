@@ -12,6 +12,7 @@ Mi apredinzaje en JavaScript
   - [Variables](#variables)
   - [Constantes](#constantes)
   - [Valores especiales](#valores-especiales)
+  - [Funciones](#funciones)
 
 ## Introduccion
 
@@ -101,3 +102,22 @@ En cambio, para un dato compuesto si puedes ya que estas accediendo a la referen
 - null: Es cuando quieres intencionalmente que el valor declarado sea nulo.
 
 - NaN: Es cuando quieres realizar una operacion matematica pero no puede ser representada por un numero.
+
+### Funciones
+
+Para utilizar las funciones en javaScript tenemos que utilizar la palabra reservada "function", 
+
+- Funciones declaradas: Son funciones que los puedes llamar en cualquier parte del codigo, ya que internamente javaScript por medio del ordenamiento de codigo lo eleva (hoisting).
+  
+```bash
+  function saludar() {
+  }
+  saludar()
+```
+
+- Funciones expresadas: Es la que se asigna a una variable y no se se puede utilizar antes de su definición.
+```bash
+  const despedida = function () {
+  }
+  despedida()
+```
