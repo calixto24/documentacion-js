@@ -13,6 +13,7 @@ Mi apredinzaje en JavaScript
   - [Constantes](#constantes)
   - [Valores especiales](#valores-especiales)
   - [Funciones](#funciones)
+  - [Arreglos](#arreglos)
 
 ## Introduccion
 
@@ -105,10 +106,10 @@ En cambio, para un dato compuesto si puedes ya que estas accediendo a la referen
 
 ### Funciones
 
-Para utilizar las funciones en javaScript tenemos que utilizar la palabra reservada "function", 
+Para utilizar las funciones en javaScript tenemos que utilizar la palabra reservada "function",
 
 - Funciones declaradas: Son funciones que los puedes llamar en cualquier parte del codigo, ya que internamente javaScript por medio del ordenamiento de codigo lo eleva (hoisting).
-  
+
 ```bash
   function saludar() {
   }
@@ -116,8 +117,60 @@ Para utilizar las funciones en javaScript tenemos que utilizar la palabra reserv
 ```
 
 - Funciones expresadas: Es la que se asigna a una variable y no se se puede utilizar antes de su definición.
+
 ```bash
   const despedida = function () {
   }
   despedida()
 ```
+
+### Arreglos
+
+Es un conjunto de elementos, js nos permite guardar cualquier tipo de dato.
+
+- Creacion de un arreglo
+
+  1. Forma 1:
+
+  ```bash
+    const a = [1,2,3]
+  ```
+
+  2. Forma 2:
+
+  ```bash
+    const b = Array.of("a", "b", "c")
+  ```
+
+  El metodo array.of tambien nos permite guardar elementos.
+
+  3. Forma 3:
+
+  ```bash
+    const c = new Array("a", "b", "c")
+  ```
+
+  Esta forma ya esta en desuso, o esta desfasado
+
+- Agregar elementos: Para agregar elementos usamos el push:
+
+  ```bash
+    const a = [1,2,3]
+    a.push(4)
+  ```
+
+- Eliminar elementos: Para eliminar elementos usamos el push:
+
+  ```bash
+    const a = [1,2,3,4]
+    a.pop()
+  ```
+
+- Recorrido de un arreglo:
+
+  Estructura
+
+  ```bash
+    const a = [1,2,3,4]
+    a.forEach(function (el *Elemento*, index *Posicion*) {})
+  ```
