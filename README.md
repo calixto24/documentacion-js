@@ -20,6 +20,7 @@ Mi apredinzaje en JavaScript
   - [Break & Continue](#break--continue)
 - [2. Capitulo 2](#capitulo-2)
   - [Destructuracion](#destructuracion)
+  - [Objetos literales](#objetos-literales)
 
 ## Introduccion
 
@@ -242,3 +243,39 @@ A diferencia de los objetos, si solo queremos un elemento, debemos respetar la p
 ```
 
 Es importante que los nombres de las variables donde guardaremos informacion sea el mismo al de las propiedades.
+
+### Objetos literales
+
+Son estandares que introdujo Emascript para facilitar su uso, para crear y definir un objeto ya que en JS todo es un objeto.
+
+Asimismo, se agrego una nueva caracteristica en donde si ya tenemos varibales declaradas y en nuestro objeto tendra una propiedad con el mismo nombre no es necesario sobreescribirlo.
+
+```bash
+    const nombre = "Jhordan"
+
+    const persona = {
+      nombre,
+      apellido: "Calixto"
+    }
+```
+
+JS entiende que si comparten el mismo nombre, pues el valor es el mismo.
+
+### Parametros REST & Operador Spread
+
+- Los parametros REST sun utiles cuando queremos funciones con una cantidad indefinida de parametros. Cabe aclarar que los almacena por defecto en un arreglo.
+
+```bash
+    function suma(a, b, ...c) {}
+```
+
+Su caracteristica principal son los 3 puntos.
+
+- Por otra parte, los Operadores Spread sirven para descomponer un arreglo u objeto.
+
+```bash
+    const numeros = [1,2,3]
+    console.log(...numeros) //1 2 3
+```
+
+Podremos visualizar que la impresion ya no saldra con array
