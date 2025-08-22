@@ -14,6 +14,10 @@ Mi apredinzaje en JavaScript
   - [Valores especiales](#valores-especiales)
   - [Funciones](#funciones)
   - [Arreglos](#arreglos)
+  - [Objetos](#objetos)
+  - [Tipos de operadores](#tipos-de-operadores)
+  - [Ternarias](#ternarias)
+  - [Break & Continue](#break--continue)
 
 ## Introduccion
 
@@ -186,3 +190,18 @@ Es una coleccion de llaves y valores. Asimimismo, los elementos dentro de un obj
 - "===" -> Comparacion de tipo de dato y de valor
 
 Hoy en dia es buena practica utilizar los tres iguales.
+
+### Ternarias
+
+Es la simplificacion del if-else en una linea de codigo, pero si son varias lineas de codigo es recomendable el anterior.
+
+```bash
+    const prueba = (condicion) ? verdadero : falso
+```
+
+### Break & Continue
+
+Ayudan a controlar el flujo de una estructura de control
+
+- Break: Sale de la estructura de control.
+- Continue: Se encarga de omitir ejecutar el siguiente valor.
