@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Funcion declarada
+        function saludar() {
+            console.log("Hola")
+        }
+
+        saludar()
+
+        //Funcion expresada
+        const suma = function (a, b) {
+            return a + b;
+        }
+
+        console.log(suma(1, 2))
+
+        //Arrow Function
+
+        // Ejemplo 1
+        const resta = (a, b) => a - b
+
+        console.log(resta(2, 1))
+
+        //Ejemplo 2
+        const saludos = () => {
+            console.log("Hola")
+            console.log("Mucho gusto")
+        }
+
+        saludos()
+
+        //Ejemplo 3
+        const numeros = [1, 2, 3]
+
+        numeros.forEach((e, i) => {
+            console.log(`${e} esta en la posicion ${i}`)
+        })
+
+        //Ejemplo 4
+        const sumas = (a, b, ...c) => {
+            let rpt = a + b;
+
+            c.forEach((e) => rpt += e)
+
+            return rpt
+        }
+
+        console.log(sumas(1, 2, 3))
+
+    </script>
+
+</body>
+
+</html>

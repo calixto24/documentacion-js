@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros REST</title>
+</head>
+
+<body>
+
+    <script>
+
+        function sumar(a, b, ...c) {
+
+            let resultado = a + b;
+
+            c.forEach(function (e, i) {
+                console.log(i)
+
+                resultado += e
+            })
+
+            return resultado
+
+        }
+
+        console.log(sumar(1, 2, 3, 1))
+
+        //Operador spread
+        const numeros = [1, 2, 3]
+
+        console.log(...numeros)
+
+        const persona = {
+            nombre: "Jhordan",
+            apellido: "Calixto"
+        }
+
+        const copy = { ...persona }
+
+        console.log(copy)
+
+    </script>
+
+</body>
+
+</html>
