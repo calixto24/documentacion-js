@@ -21,6 +21,8 @@ Mi apredinzaje en JavaScript
 - [2. Capitulo 2](#capitulo-2)
   - [Destructuracion](#destructuracion)
   - [Objetos literales](#objetos-literales)
+  - [Parametros REST & Spread](#parametros-rest--operador-spread)
+  - [Arrow Functions](#arrow-function)
 
 ## Introduccion
 
@@ -279,3 +281,23 @@ Su caracteristica principal son los 3 puntos.
 ```
 
 Podremos visualizar que la impresion ya no saldra con array
+
+### Arrow Function
+
+Son una forma mas sencilla de escribir funciones expresadas.
+
+- Tradicional
+
+```bash
+    const suma = function (a,b) {
+      return a + b
+    }
+```
+
+- Arrow Function
+
+```bash
+    const suma = (a,b) => a + b
+```
+
+Pero cabe recalcar que es una mala practica utilizarlo en objetos literales ¿Porque? Este tipo de funcion no respeta el contexto en el que se encuentra.
