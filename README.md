@@ -18,6 +18,8 @@ Mi apredinzaje en JavaScript
   - [Tipos de operadores](#tipos-de-operadores)
   - [Ternarias](#ternarias)
   - [Break & Continue](#break--continue)
+- [2. Capitulo 2](#capitulo-2)
+  - [Destructuracion](#destructuracion)
 
 ## Introduccion
 
@@ -205,3 +207,38 @@ Ayudan a controlar el flujo de una estructura de control
 
 - Break: Sale de la estructura de control.
 - Continue: Se encarga de omitir ejecutar el siguiente valor.
+
+## Capitulo 2
+
+En este capitulo vamos a ver temas mas complejos.
+
+### Destructuracion
+
+Es la asignacion dinamica de lo que hay en un arreglo u objeto en nuevas variables.
+
+- Para el caso de arreglos:
+
+```bash
+    const numeros = {1,2,3}
+    const {one, two, three} = numeros
+```
+
+A diferencia de los objetos, si solo queremos un elemento, debemos respetar la posicion en la que se encuentre.
+
+```bash
+    const numeros = {1,2,3}
+    const {,, three} = numeros
+```
+
+- Para los objetos:
+
+```bash
+    const persona = {
+      nombre: "Jhordan",
+      apellido: "Calixto"
+    }
+
+    const {nombre, apellido} = persona
+```
+
+Es importante que los nombres de las variables donde guardaremos informacion sea el mismo al de las propiedades.
