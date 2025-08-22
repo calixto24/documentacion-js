@@ -174,3 +174,15 @@ Es un conjunto de elementos, js nos permite guardar cualquier tipo de dato.
     const a = [1,2,3,4]
     a.forEach(function (el *Elemento*, index *Posicion*) {})
   ```
+
+### Objetos
+
+Es una coleccion de llaves y valores. Asimimismo, los elementos dentro de un objeto se les conoce como propiedades y a las funciones se les llama metodos.
+
+### Tipos de operadores
+
+- "=" -> Es una asignacion de variables
+- "==" -> Comparacion de valores
+- "===" -> Comparacion de tipo de dato y de valor
+
+Hoy en dia es buena practica utilizar los tres iguales.
