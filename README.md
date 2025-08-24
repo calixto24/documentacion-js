@@ -335,4 +335,40 @@ Son patrones que usamos para validar cadenas de texto
     let expReg = new RegExp(/*Escribes el patron*/)
 ```
 
-Puedes utilizar su metodo test que nos dara un true or false, verifica si cumple el patron
+Puedes utilizar su metodo test que nos dara un true or false, verifica si cumple el patron.
+
+### Modulo
+
+Un modulo es un archivo que nos permite exportar (funciones, clases, objetos, variables) y poder importarlos en otros archivos.
+
+- Es util para que el codigo no sea un caos o el codigo spagguetti
+
+Ejemplo
+
+- utils.js
+
+```bash
+  export function sumar(a, b) {
+    return a + b;
+  }
+
+  export const PI = 3.1416;
+```
+
+- main.js
+
+```bash
+  import { sumar, PI } from "./utils.js";
+
+  console.log(sumar(2, 3)); // 5
+  console.log(PI);          // 3.1416
+```
+
+En el import se utiliza la destructuracion, tema visto inicialmente, que basicamente es la asignacion dinamica a nuevas variables
+
+- Obligatorio para que funcione
+  En el HTML debes usar:
+
+```bash
+  <script type="module" src="main.js"></script>
+```

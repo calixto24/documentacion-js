@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Programa una función que cuente el número de 
+     caracteres de una cadena de texto, pe.miFuncion("Hola Mundo") 
+     devolverá 10. -->
+
+    <script>
+
+        const prueba = (objeto, ...c) => {
+
+            if (typeof objeto === "object" && !Array.isArray(objeto)) {
+
+                for (let elemento of Object.values(objeto)) {
+
+                    console.log(inicializador(elemento).length)
+
+                }
+
+            } else if (typeof objeto === "string" || Array.isArray(c) && !Array.isArray(objeto)) {
+
+                console.log(inicializador(objeto).length)
+
+                c.forEach((e) => {
+                    console.log(inicializador(e).length)
+                })
+
+            } else if (Array.isArray(objeto)) {
+
+                objeto.forEach((e) => {
+                    console.log(inicializador(e).length)
+                })
+
+            }
+
+        }
+
+        const inicializador = (cadena) => String(cadena)
+
+        //Pruebas
+        const persona = {
+            nombre: "Jhordan",
+            apellido: "Calixto"
+        }
+
+        const arr = ["a", "sb"]
+
+        prueba(arr)
+
+
+    </script>
+
+</body>
+
+</html>
