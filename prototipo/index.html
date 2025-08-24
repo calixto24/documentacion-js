@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Persona(nombre, apellido) {
+            this.nombre = nombre,
+                this.apellido = apellido
+        }
+
+        Persona.prototype.fullName = function () {
+            console.log("Hola")
+        }
+
+        const persona1 = new Persona("Jhordan", "Calixto")
+        console.log(persona1)
+        persona1.fullName()
+
+    </script>
+
+
+</body>
+
+</html>
