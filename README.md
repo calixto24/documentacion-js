@@ -301,3 +301,38 @@ Son una forma mas sencilla de escribir funciones expresadas.
 ```
 
 Pero cabe recalcar que es una mala practica utilizarlo en objetos literales ¿Porque? Este tipo de funcion no respeta el contexto en el que se encuentra.
+
+### Prototipos
+
+JavaScript es un lenguaje basado en prototipos, todos los objetos tienen prototipos. Es una especie de plantilla u objeto padre que tiene propiedades y metodos, eso es un prototipo.
+
+Si JS no le encuentra una propiedad a un objeto, este accede a buscarlo en su prototipo y si no esta busca en otro. Se le conoce como (Prototype Chain)
+
+- Funciones constructoras: Lo ideal es que solo tengan los atributos y no los metodos se les implemente al prototipo para mejorar el rendimiento y memoria.
+
+```bash
+    function Persona(nombre, apellido) {
+      this.nombre = nombre,
+      this.apellido = apellido
+    }
+
+    Persona.prototype.fullName = function () {
+      console.log("Hola")
+    }
+```
+
+### Operador de Cortocircuito
+
+- OR (||) : Cuando el valor de la izquierda tiende a verdadero, es el valor que se cargara por defecto.
+
+- AND : Cuando el valor de la izquierdan tienda a falso, es el valor que se cargara por defecto.
+
+### Expresiones regulares
+
+Son patrones que usamos para validar cadenas de texto
+
+```bash
+    let expReg = new RegExp(/*Escribes el patron*/)
+```
+
+Puedes utilizar su metodo test que nos dara un true or false, verifica si cumple el patron
